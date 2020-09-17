@@ -59,6 +59,8 @@ const SignIn = () => {
     e.preventDefault();
     // Ensure required fields have a value
     if (checkRequiredFields() === true) {
+      // Ensure we clear any tokens from local storage
+      localStorage.clear();
       axios.post(LOGIN_URL, formData)
         .then((resp) => {
           localStorage.setItem('email', JSON.stringify(formData.email));
