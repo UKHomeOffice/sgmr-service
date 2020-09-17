@@ -10,7 +10,7 @@ npm install
 
 ### Build the application (dev mode)
 ```sh
-npm run build-dev
+npm run build:dev
 ```
 
 ### Running application

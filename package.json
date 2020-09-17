@@ -4,7 +4,7 @@
   "description": "A frontend service for interacting with the sGMR Data API",
   "scripts": {
     "build": "webpack --mode=production",
-    "build-dev": "webpack --mode=development",
+    "build:dev": "webpack --mode=development",
     "lint": "eslint -f table",
     "lint:extra": "eslint \"./src/**/*.{js,jsx}\" --fix",
     "start": "webpack-dev-server --watch-poll --mode=development",
