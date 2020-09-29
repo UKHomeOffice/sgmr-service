@@ -10,7 +10,8 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
     "plugin:jest/recommended",
-    "plugin:react/recommended"
+	"plugin:react/recommended",
+	"plugin:cypress/recommended"
   ],
   "parser": "babel-eslint",
   "globals": {
@@ -47,5 +48,11 @@ module.exports = {
     "prefer-const": "off",
     "prefer-destructuring": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
-  }
+  },
+  "overrides": [{
+	"files": [ "*.spec.js" , "commands.js"],
+	"rules": {
+	  "jest/valid-expect": 0
+	}
+  }]
 };

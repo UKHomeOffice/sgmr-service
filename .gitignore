@@ -48,3 +48,5 @@ _SpecRunner.html
 *.swp
 *.tgz
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+cypress/screenshots
+cypress/videos
