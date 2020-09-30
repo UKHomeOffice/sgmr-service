@@ -10,8 +10,8 @@
     "start": "webpack-dev-server --watch-poll --mode=development",
     "test": "jest",
     "test:coverage": "jest --coverage --colors",
-	"test:watch": "npm run test -- --watch",
-	"cypress:test": "cypress run"
+    "test:watch": "npm run test -- --watch",
+    "cypress:test": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -31,11 +31,13 @@
       "^@lib(.*)$": "<rootDir>/src/lib$1",
       "^@state(.*)$": "<rootDir>/src/state$1",
       "^@utils(.*)$": "<rootDir>/src/utils$1"
-	},
+    },
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.js"
-	],
-	"modulePathIgnorePatterns": ["cypress"]
+    ],
+    "modulePathIgnorePatterns": [
+      "cypress"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -57,8 +59,8 @@
     "eslint-plugin-jest": "^22.15.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
-	"eslint-plugin-react-hooks": "^1.7.0",
-	"eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-cypress": "^2.11.1",
     "faker": "^5.1.0",
     "file-loader": "^5.1.0",
     "jest": "^24.9.0",

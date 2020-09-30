@@ -1,11 +1,9 @@
 {
-	"defaultCommandTimeout": 10000,
-	"requestTimeout": 20000,
-	"responseTimeout": 20000,
-	"chromeWebSecurity": false,
-	"env": {
-		"baseUrl":"http://localhost:8080"
-	},
-	"testFiles": "**/sGMR/*.js",
-	"video": false
+  "defaultCommandTimeout": 10000,
+  "requestTimeout": 20000,
+  "responseTimeout": 20000,
+  "chromeWebSecurity": false,
+  "baseUrl": "http://localhost:8080",
+  "testFiles": "**/sGMR/*.js",
+  "video": false
 }
