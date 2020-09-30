@@ -31,10 +31,11 @@
       "^@lib(.*)$": "<rootDir>/src/lib$1",
       "^@state(.*)$": "<rootDir>/src/state$1",
       "^@utils(.*)$": "<rootDir>/src/utils$1"
-    },
+	},
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.js"
-    ]
+	],
+	"modulePathIgnorePatterns": ["cypress"]
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
