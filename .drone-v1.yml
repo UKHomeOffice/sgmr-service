@@ -172,7 +172,7 @@ steps:
     image: cypress/included:6.0.1
     commands:
       - npm ci
-      - cypress run --env configFile=ci --env mailSlurpApiKey=MAILSLURP_API_KEY
+      - cypress run --env configFile=ci,mailSlurpApiKey=$${MAILSLURP_API_KEY}
     when:
       event:
         - push
