@@ -1,0 +1,9 @@
+{
+	"baseUrl": "http://sgmr-frontend:8080",
+	"env": {
+		"envname": "ci",
+		"api_server": "http://sgmr-api:5000/v1",
+		"host": "http://sgmr-frontend:8080",
+		"dbName": "sgmr_test_db"
+	}
+}
