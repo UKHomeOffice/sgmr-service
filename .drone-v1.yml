@@ -176,6 +176,8 @@ steps:
     when:
       event:
         - push
+    MAILSLURP_API_KEY:
+      from_secret: DEV_SGMR_MAILSLURP_API_KEY
 
   - name: deploy_to_dev
     pull: if-not-exists
