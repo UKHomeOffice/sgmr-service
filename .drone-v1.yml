@@ -342,50 +342,51 @@ services:
     image: 340268328991.dkr.ecr.eu-west-2.amazonaws.com/cop/sgmr-data-api
     environment:
       GOV_NOTIFY_API_KEY:
-        from_secret: DEV_SGMR_DATA_API_GOV_NOTIFY_API_KEY
+        from_secret: CI_SGMR_DATA_API_GOV_NOTIFY_API_KEY
       GOV_NOTIFY_PASSWORD_RESET_TEMPLATE_ID:
-        from_secret: DEV_SGMR_DATA_API_GOV_NOTIFY_PASSWORD_RESET_TEMPLATE_ID
+        from_secret: CI_SGMR_DATA_API_GOV_NOTIFY_PASSWORD_RESET_TEMPLATE_ID
       GOV_NOTIFY_REGISTRATION_TEMPLATE_ID:
-        from_secret: DEV_SGMR_DATA_API_GOV_NOTIFY_REGISTRATION_TEMPLATE_ID
+        from_secret: CI_SGMR_DATA_API_GOV_NOTIFY_REGISTRATION_TEMPLATE_ID
       GOV_NOTIFY_TEMPLATE_ID:
-        from_secret: DEV_SGMR_DATA_API_GOV_NOTIFY_TEMPLATE_ID
+        from_secret: CI_SGMR_DATA_API_GOV_NOTIFY_TEMPLATE_ID
       GOV_NOTIFY_VOYAGE_CANCELLATION_TEMPLATE_ID:
-        from_secret: DEV_SGMR_DATA_API_GOV_NOTIFY_VOYAGE_CANCELLATION_TEMPLATE_ID
+        from_secret: CI_SGMR_DATA_API_GOV_NOTIFY_VOYAGE_CANCELLATION_TEMPLATE_ID
       GOV_NOTIFY_VOYAGE_SUBMISSION_TEMPLATE_ID:
-        from_secret: DEV_SGMR_DATA_API_GOV_NOTIFY_VOYAGE_SUBMISSION_TEMPLATE_ID
+        from_secret: CI_SGMR_DATA_API_GOV_NOTIFY_VOYAGE_SUBMISSION_TEMPLATE_ID
       JWT_EXPIRY_HOURS:
-        from_secret: DEV_SGMR_DATA_API_JWT_EXPIRY_HOURS
-      JWT_SECRET_KEY: test-token
+        from_secret: CI_SGMR_DATA_API_JWT_EXPIRY_HOURS
+      JWT_SECRET_KEY:
+        from_secret: CI_SGMR_DATA_API_JWT_SECRET_KEY
       KUBE_NAMESPACE:
-        from_secret: DEV_KUBE_NAMESPACE_COP_SGMR
+        from_secret: CI_KUBE_NAMESPACE_COP_SGMR
       KUBE_SERVER:
-        from_secret: DEV_KUBE_SERVER
+        from_secret: CI_KUBE_SERVER
       KUBE_TOKEN:
-        from_secret: DEV_SGMR_KUBE_TOKEN
+        from_secret: CI_SGMR_KUBE_TOKEN
       NGINX_IMAGE:
         from_secret: NGINX_IMAGE
       NGINX_TAG:
         from_secret: NGINX_TAG
       ONE_TIME_PASS_INTERVAL_LENGTH:
-        from_secret: DEV_SGMR_DATA_API_ONE_TIME_PASS_INTERVAL_LENGTH
+        from_secret: CI_SGMR_DATA_API_ONE_TIME_PASS_INTERVAL_LENGTH
       ONE_TIME_PASS_SECRET:
-        from_secret: DEV_SGMR_DATA_API_ONE_TIME_PASS_SECRET
+        from_secret: CI_SGMR_DATA_API_ONE_TIME_PASS_SECRET
       REF_DATA_API_HAWK_ID:
-        from_secret: DEV_REF_DATA_API_HAWK_ID
+        from_secret: CI_REF_DATA_API_HAWK_ID
       REF_DATA_API_HAWK_KEY:
-        from_secret: DEV_REF_DATA_API_HAWK_KEY
+        from_secret: CI_REF_DATA_API_HAWK_KEY
       REF_DATA_API_URL:
-        from_secret: DEV_API_REF_URL
+        from_secret: CI_API_REF_URL
       S3_AWS_ACCESS_KEY_ID:
-        from_secret: DEV_SGMR_DATA_API_S3_AWS_ACCESS_KEY_ID
+        from_secret: CI_SGMR_DATA_API_S3_AWS_ACCESS_KEY_ID
       S3_AWS_SECRET_ACCESS_KEY:
-        from_secret: DEV_SGMR_DATA_API_S3_AWS_SECRET_ACCESS_KEY
+        from_secret: CI_SGMR_DATA_API_S3_AWS_SECRET_ACCESS_KEY
       S3_BUCKET_NAME:
-        from_secret: DEV_SGMR_DATA_API_S3_BUCKET_NAME
+        from_secret: CI_SGMR_DATA_API_S3_BUCKET_NAME
       SERVICE_USER_EMAIL:
-        from_secret: DEV_SGMR_DATA_API_SERVICE_USER_EMAIL
+        from_secret: CI_SGMR_DATA_API_SERVICE_USER_EMAIL
       SERVICE_USER_PASSWORD:
-        from_secret: DEV_SGMR_DATA_API_SERVICE_USER_PASSWORD
+        from_secret: CI_SGMR_DATA_API_SERVICE_USER_PASSWORD
       SGMR_DATA_API_IMAGE:
         from_secret: SGMR_DATA_API_IMAGE
       SGMR_DATA_API_NAME:
@@ -393,19 +394,19 @@ services:
       SGMR_DATA_API_PORT:
         from_secret: SGMR_DATA_API_PORT
       SGMR_DATA_API_URL:
-        from_secret: DEV_SGMR_DATA_API_URL
+        from_secret: CI_SGMR_DATA_API_URL
       SQS_QUEUE_AWS_ACCESS_KEY_ID:
-        from_secret: DEV_SGMR_DATA_API_SQS_QUEUE_AWS_ACCESS_KEY_ID
+        from_secret: CI_SGMR_DATA_API_SQS_QUEUE_AWS_ACCESS_KEY_ID
       SQS_QUEUE_AWS_SECRET_ACCESS_KEY:
-        from_secret: DEV_SGMR_DATA_API_SQS_QUEUE_AWS_SECRET_ACCESS_KEY
+        from_secret: CI_SGMR_DATA_API_SQS_QUEUE_AWS_SECRET_ACCESS_KEY
       SQS_QUEUE_NAME:
-        from_secret: DEV_SGMR_DATA_API_SQS_QUEUE_NAME
+        from_secret: CI_SGMR_DATA_API_SQS_QUEUE_NAME
       SQS_QUEUE_SSE_KMS_KEY_ID:
-        from_secret: DEV_SGMR_DATA_API_SQS_QUEUE_SSE_KMS_KEY_ID
+        from_secret: CI_SGMR_DATA_API_SQS_QUEUE_SSE_KMS_KEY_ID
       SQS_URL:
-        from_secret: DEV_SGMR_DATA_API_SQS_URL
+        from_secret: CI_SGMR_DATA_API_SQS_URL
       WHITELIST:
-        from_secret: DEV_WHITELIST
+        from_secret: CI_WHITELIST
       DBUSER: postgres
       DBPASSWORD: test
       DBHOST: sgmr-db
