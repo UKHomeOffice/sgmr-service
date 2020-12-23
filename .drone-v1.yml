@@ -355,8 +355,7 @@ services:
         from_secret: DEV_SGMR_DATA_API_GOV_NOTIFY_VOYAGE_SUBMISSION_TEMPLATE_ID
       JWT_EXPIRY_HOURS:
         from_secret: DEV_SGMR_DATA_API_JWT_EXPIRY_HOURS
-      JWT_SECRET_KEY:
-        from_secret: test-token
+      JWT_SECRET_KEY: test-token
       KUBE_NAMESPACE:
         from_secret: DEV_KUBE_NAMESPACE_COP_SGMR
       KUBE_SERVER:
