@@ -356,7 +356,7 @@ services:
       JWT_EXPIRY_HOURS:
         from_secret: DEV_SGMR_DATA_API_JWT_EXPIRY_HOURS
       JWT_SECRET_KEY:
-        from_secret: DEV_SGMR_DATA_API_JWT_SECRET_KEY
+        from_secret: test-token
       KUBE_NAMESPACE:
         from_secret: DEV_KUBE_NAMESPACE_COP_SGMR
       KUBE_SERVER:
