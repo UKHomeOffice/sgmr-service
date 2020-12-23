@@ -179,6 +179,10 @@ steps:
     environment:
       MAILSLURP_API_KEY:
         from_secret: DEV_SGMR_MAILSLURP_API_KEY
+      CYPRESS_KEY:
+        from_secret: CYPRESS_KEY
+      CYPRESS_PROJECT_ID:
+        from_secret: CYPRESS_PROJECT_ID
 
   - name: deploy_to_dev
     pull: if-not-exists
