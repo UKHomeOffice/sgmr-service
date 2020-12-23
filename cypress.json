@@ -5,5 +5,6 @@
   "chromeWebSecurity": false,
   "testFiles": "**/sGMR/*.js",
   "video": false,
-  "watchForFileChanges":false
+  "watchForFileChanges":false,
+  "projectId": "nh8fej"
 }
